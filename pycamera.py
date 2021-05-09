@@ -23,20 +23,20 @@ while (True) :
 			void = []
 			create_list()
 				#void = []
-	
+	#i could make a dictionnary for each char i'll make it in the next version .
 	for i in range(len(void)) :
 		if void[i] < 25 :
 			main_char = '+'
-		elif void[i] < 45 and void[i] > 25 :
+		if void[i] < 45 and void[i] > 25 :
 			main_char = 'X'
-		elif void[i] < 90 and void[i] > 45 :
+		if void[i] < 90 and void[i] > 45 :
 			main_char = 'x'
-		elif void[i] < 120 and void[i] > 90:
+		if void[i] < 120 and void[i] > 90:
 			main_char = '$'
-		elif void[i] < 150 and void[i] > 120 :
+		if void[i] < 150 and void[i] > 120 :
 			main_char = '&'
 
-		elif i % 100 == 0 :
+		if i % 100 == 0 :
 			final_text += '\n'
 		final_text += str(caca)
 	print(final_text)
